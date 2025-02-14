@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="index.css"> <!-- Link to CSS file -->
+</head>
+<body>
+
+     <header>
+        <nav>
+            <div class="logo"><i class="fa-solid fa-utensils"></i> <p class="Eats">NexusEats</p></div>
+            <ul class="nav-links">
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Service">Service</a></li>
+                <li><a href="#Menu">Menu</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="btn"> Order a meal</button>
+    </header>
+
+
+    <div class="shopping">
+        <h1 >Checkout</h1>
+    </div>
+    <div class="checkout-container">
+        <div class="checkout-form">
+            <h2>Billing Details</h2>
+            <form id="checkoutForm">
+                <div class="input-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" placeholder="Enter your full name" required>
+                </div>
+            <div class="payment-row">
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+                <div class="input-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" placeholder="Enter your address" required></textarea>
+                </div>
+
+                <h2>Payment Details</h2>
+                <div class="input-group">
+                    <label for="cardNumber">Card Number</label>
+                    <input type="text" id="cardNumber" placeholder="**** **** **** ****" required>
+                </div>
+
+                <div class="payment-row">
+                    <div class="input-group">
+                        <label for="expiry">Expiry Date</label>
+                        <input type="text" id="expiry" placeholder="MM/YY" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="***" required>
+                    </div>
+                </div>
+
+                <button type="submit" class="checkout-btn">Complete Payment</button>
+            </form>
+        </div>
+
+        <div class="order-summary">
+            <h2>Order Summary</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Qty</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="order-summary"></tbody>
+            </table>
+            <p><strong>Total: <span id="total-price">N0</span></strong></p>
+            <a href="cartPage.html" class="back-to-cart">← Back to Cart</a>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+<footer>
+    <div class="footer-container">
+        <div class="footer-logo"><i class="fa-solid fa-utensils"></i> <p class="Eats">NexusEats</p></div>
+        <div><h4>Opening______</h4>
+            <p>Monday - Saturday
+                09AM - 09PM
+                <br>
+                Sunday
+                10AM - 08PM</p>
+        </div>
+
+    <div class="footer-contact">
+            <h4>Contact Us______</h4>
+            <p>Email: info@neural Restaurant.com</p>
+            <p>Phone: +342 456 7890</p>
+            <p>Address: 123 Health Street, Wellness City, Abuja</p>
+        </div>
+
+      
+        <div class="footer-social">
+            <h4>Follow Us______</h4>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+            <a href="#">LinkedIn</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024. All Rights Reserved.</p>
+    </div>
+</footer>
+
+</html>

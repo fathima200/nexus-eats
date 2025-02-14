@@ -1,0 +1,731 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-color: #b7c0e5; */
+    font-family: system-ui, -apple-system, sans-serif;
+    background: rgb(248, 236, 211);
+      line-height: 1.6;
+      background-size: cover;
+      background-blend-mode: overlay;
+    
+      /* background:  rgba(255,255,255,0.5); */
+      
+  }
+section {
+              max-width: 1200px;
+              margin: 0 auto 4rem;
+          }
+  
+header{
+      background-color:#0F172B;
+      display: flex;
+      /* flex-direction: column; */
+      justify-content: space-around;
+      padding: 20px;
+  }
+  
+  nav, .nav-links {
+      display: flex;
+      gap: 50px;
+      margin-left: 100px;
+  }
+  
+  .nav-links {
+      gap: 50px;
+      list-style: none;
+      font-size: larger;
+  }
+  
+  .nav-links a {
+    font-weight:bold ;
+      color: rgb(255, 255, 255);
+      text-decoration: none;
+  }
+  .logo {
+    display: flex;
+    /* align-items: center; */
+    font-size: 50px;
+    color: #f99223;
+    /* padding: 10px; */
+}
+
+.logo i {
+    margin-right: 10px;
+}
+.Eats{
+    font-size: 25px;
+    font-weight: bolder;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+  
+  .nav-links a:hover{
+   color: orange;
+  }
+
+.btn{
+    padding: 0px 20px;
+    height: 40px;
+    color: white;
+    background-color: orange;
+    border: none;
+    font-size: larger;
+    border-radius: 10px;
+}
+
+.menu-container {
+    /* max-width: 800px; */
+    margin: auto;
+    padding: 20px;
+      /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    border-radius: 10px;
+  }
+  .first{
+    width: 700px;
+  }
+  .menu-container h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #d35400;
+    margin-bottom: 20px;
+  }
+  
+  /* Categories */
+  .categories {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  .pb{
+    color: #d35400;
+    margin: auto;
+    text-align: center;
+  }
+  .categories button {
+    background-color: #e67e22;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .categories button.active {
+    background-color: #d35400;
+  }
+  
+  .categories button:hover {
+    background-color: #d35400;
+  }
+
+
+
+  .menuu-container {
+    display: flex;
+    gap: 50px;
+    padding: 50px;
+}
+.menu-card {
+    /* color: #fff; */
+    background:#fffdfb;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    /* width: 250px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* .images{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+} */
+.menu-card img {
+    width: 50%; 
+    /* height: 200px; */
+    object-fit:fill;
+}
+.menu-info {
+    padding: 15px;
+}
+span{
+    margin-top: 20px;
+    color: white;
+    border-radius: 10px;
+    background-color: #28224e;
+    /* font-size: larger; */
+    font-weight: bold;
+    margin-right: 50px;
+    padding:5px 20px ;
+}
+
+.cart-btn {
+    color: #fff;
+    margin-top: 20px;
+    background: rgb(255, 153, 0);
+    border: none;
+    font-weight: bold;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+
+.cartimage{
+    width: 40%;background-color:#0F172B;
+    height: 50%;
+}
+
+footer {
+    height:50vh;
+    background-color: #0F172B;
+    color: #ffffff;
+    padding: 30px 50px;
+    margin-top: 30px;
+}
+
+.footer-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid #ffffff33;
+    padding-bottom: 20px;
+}
+
+
+
+.footer-logo {
+    display: flex;
+    /* align-items: center; */
+    font-size: 50px;
+    color: #f99223;
+    /* padding: 10px; */
+}
+
+.footer-logo i {
+    margin-right: 10px;
+}
+
+
+.footer-logo .neural {
+    color: #ffffff; 
+    font-weight: bold;
+font-size: larger;
+}
+
+
+.footer-logo p {
+    font-size: 20px;
+    margin-top: 10px;
+    line-height: 1.5;
+}
+
+
+.footer-links h4 {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color:#fd9753;
+}
+
+
+.footer-contact p {
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+footer h4 {
+    color: #fd9753;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.footer-social a {
+    display: inline-block;
+    margin-right: 15px;
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-social a:hover {
+    color: #ffffff;
+}
+
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #ffffffb3;
+}
+
+
+
+.explore{
+   /* background-color: #0F172B; */
+    margin-top: 80px;
+    /* margin: auto; */
+    text-align: center;
+}
+
+.pics{
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    /* max-width: 800px; */
+    display: flex;
+}
+
+
+.pics img {
+    margin: auto;
+    width: 300px;
+}
+.offer{
+    margin: auto;
+    max-width: 600px;
+    text-align: center;
+    justify-content: center;
+}
+.itemm img {
+    width: 400px;
+    /* background-color: #f99223; */
+}
+.explore h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 50px;
+    font-weight:lighter;
+}
+.checkout {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+    background-color:#0F172B;
+    /* max-width: 800px; */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.image-container {
+    flex: 1;
+    padding: 10px;
+}
+
+.cartimage {
+    width: 450px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+.details-container {
+    flex: 2;
+    padding: 10px;
+}
+.select{
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.price {
+    margin-top: 40px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #d35400;
+}
+
+.description {
+    margin: 10px 0;
+    line-height: 1.6;
+}
+
+.butoon {
+    margin-bottom: 20px;
+     background-color: transparent;
+    color: #ffffff;
+     border-color: #f99223;
+    padding: 10px 50px;
+    /* border-radius: 5px; */
+    cursor: pointer; 
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buton:hover {
+    background-color: #d35400;
+}
+label{
+    margin-right: 20px;
+    font-size: larger;
+    font-weight: bolder;
+}
+#qty {
+    width: 50px;
+    padding: 5px;
+    margin: 10px 0;
+}
+
+.cart {
+    margin-left: 20px;
+    background-color: #fd9753;
+    color: #fff;
+    border: none;
+    font-size: larger;
+    padding: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.cart:hover {
+    background-color: #e67e22;
+}
+
+
+
+
+
+
+
+
+/* General Styles */
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+} */
+
+.shopping{
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+    /* background-color: #ff8800; */
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+}
+
+.shopping h1 {
+    margin: 0;
+    color: #000000;
+    font-size: 50px;
+    
+}
+
+.continue-shopping {
+    text-decoration: none;
+    background-color: rgb(14, 15, 31);
+    color: #ff8800;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.continue-shopping:hover {
+    background-color: #ffd699;
+}
+
+/* Cart Table */
+table {
+    width: 90%;
+    margin: 20px auto;
+    border-collapse: collapse;
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+th {
+    background-color: #e57a01;
+    color: white;
+}
+
+
+.cart-image {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+
+input[type="number"] {
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 20px;
+}
+
+
+.delete-btn {
+    background: rgb(6, 1, 1);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+.delete-btn:hover {
+    background: rgb(248, 172, 101);
+}
+
+.cart-summary {
+    text-align: center;
+    margin: 50px;
+    justify-content: center;
+}
+
+.cart-summary h2 {
+    border: 1px solid rgb(96, 95, 95);
+    font-size: 24px;
+    border-radius: 50px;
+    width: 500px;
+    margin: auto;
+    margin-bottom: 50px;
+
+    text-align: center;
+    justify-content: center;
+}
+
+.clear-cart, .checkoutt {
+    background: #ff8800;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin-inline: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    /* gap: 30px; */
+}
+
+.clear-cart:hover, .checkoutt:hover {
+    background: #cc7000;
+}
+#total-price {
+    background:none;
+    color: #000000;
+}
+
+
+/* Checkout Container */
+.checkout-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    /* max-width: 1000px; */
+    margin: 40px auto;
+    padding: 20px;
+}
+
+/* Left Section: Checkout Form */
+.checkout-form {
+    max-width: 600px;
+    flex: 1;
+    padding: 25px;
+    border: 1px solid #000000;
+}
+
+/* Form Input Styling */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.input-group input,
+.input-group textarea {
+    background: rgb(255, 255, 255);
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    border-radius: 50px;
+    font-size: 16px;
+}
+
+/* Two Fields Side by Side */
+.payment-row {
+    display: flex;
+    gap: 10px;
+}
+
+.payment-row .input-group {
+    flex: 1;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    width: 100%;
+    background: #ff6600;
+    color: white;
+    border: none;
+    padding: 12px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.checkout-btn:hover {
+    background: #cc5500;
+}
+
+/* Right Section: Order Summary */
+.order-summary {
+    width: 500px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 20px;
+}
+
+/* Order Table */
+.order-summary table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 10px;
+}
+
+.order-summary th, 
+.order-summary td {
+    border-bottom: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.back-to-cart {
+    display: inline-block;
+    margin-top: 15px;
+    color: #ff6600;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.back-to-cart:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.menu-slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.banner {
+    background-image: url(/Restron\ image2.jpg);
+    /* position:relative; */
+    object-fit: cover;
+    /* width:250%; */
+    height:100vh;
+    background-size: cover;
+}
+#welcome{
+    color:white;
+    position:absolute;
+    top:34%;
+    left:30px;
+}
+#welcome h1{
+    font-size: 40px;
+}
+#welcome p{
+    margin-top: 30px;
+    font-size: 25px;
+    
+}
+#welcome button{
+    padding: 10px 20px;
+    background-color: rgb(255, 170, 0);
+    color:white;
+    font-size: larger;
+    font-weight: bolder;
+    margin-top: 20px;
+    border-radius: 20px;
+
+}
+#welcome button:hover{
+    background-color: white;
+    color:rgb(27, 27, 56);
+    padding: 15px;
+}
+ /* header{
+    z-index: 1; 
+    position:fixed;
+}
+header nav{
+    background-color: rgba (0, 0, 0,0.5);
+    opacity: 0;
+    
+    padding: 20px;
+    justify-content: space-around;
+    display:flex;
+    gap:20px; */ */
+
+
+
+    
+/* } */
+
+/* nav a{
+    color: white;
+}
+
+nav.logo{
+    margin-left: 10px;
+    
+} */
+ 
+ /* .links{
+    margin-left:10px;
+    margin-right: 70px;
+    
+    gap:30px;
+    justify-items: center;
+    gap:30px; 
+
+     */
